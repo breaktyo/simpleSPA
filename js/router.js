@@ -47,7 +47,7 @@ let pageUrls = {
         <input type="email" id="email" name="email" required>
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
-        <div class="g-recaptcha" data-sitekey="TWOJ_SITE_KEY"></div>
+        <div class="g-recaptcha" data-sitekey="6Lf6vCgrAAAAAN022q15VZbzJBhchLvtaRwFsvA5"></div>
         <button type="submit">Send</button>
       </form>`;
   
@@ -86,22 +86,6 @@ let pageUrls = {
     });
   }
 
-  /*function lazyLoadImages() {
-    const images = document.querySelectorAll('img[data-src]');
-    const options = { rootMargin: '50px', threshold: 0.01 };
-  
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
-          observer.unobserve(img);
-        }
-      });
-    }, options);
-  
-    images.forEach(img => observer.observe(img));
-  }*/
 
     function lazyLoadImages() {
       const images = document.querySelectorAll('img[data-src]');
