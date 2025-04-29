@@ -1,36 +1,53 @@
 html, body {
-    font-family: sans-serif;
-    text-align: center;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
   
   header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #4CAF50;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   
   .header-links-ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 60%;
     padding: 0;
+    margin: 0;
   }
   
   .header-link {
-    padding: 0.4rem;
-    border-radius: 2px;
+    padding: 0.8rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
     cursor: pointer;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
   }
   
   .header-link:hover {
-    border-bottom: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: none;
   }
   
   main {
@@ -98,3 +115,49 @@ html, body {
     cursor: pointer;
   }
   
+
+  #theme-toggle {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    outline: none;
+  }
+
+  #theme-toggle:hover {
+    background-color: white;
+    color: #4CAF50;
+  }
+
+  .g-recaptcha {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  #contact-form button {
+    max-width: 600px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    width: 50%;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin: auto;
+  }
+  
+  #contact-form button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }

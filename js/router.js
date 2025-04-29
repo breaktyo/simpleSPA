@@ -47,7 +47,7 @@ let pageUrls = {
         <input type="email" id="email" name="email" required>
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
-        <div class="g-recaptcha" data-sitekey="6Lf6vCgrAAAAAN022q15VZbzJBhchLvtaRwFsvA5"></div>
+        <div class="g-recaptcha" data-sitekey="6Lf6vCgrAAAAAB1xVaU9P3tY6IK4CJh9gwQYfwi3"></div>
         <button type="submit">Send</button>
       </form>`;
   
